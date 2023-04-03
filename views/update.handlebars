@@ -1,0 +1,40 @@
+{{!-- <form action="/update" method="POST">
+  <input type="hidden" name="id" value="{{user._id}}"><br><br>
+  <label for="ten">Tên:</label>
+  <input type="text" id="ten" name="ten" value="{{user.ten}}"><br><br>
+  <label for="tuoi">Tuổi:</label>
+  <input type="number" id="tuoi" name="tuoi" value="{{user.tuoi}}"><br><br>
+  <label for="diemtb">Điểm TB:</label>
+  <input type="number" id="diemtb" name="diemtb" value="{{user.diemtb}}"><br><br>
+  <label for="diachi">Địa chỉ:</label>
+  <input type="text" id="diachi" name="diachi" value="{{user.diachi}}"><br><br>
+  <button type="submit">Cập nhật</button>
+</form> --}}
+
+<a class="btn-primary btn btn-block" href="./">Thoát</a>
+<div class="container p-3">
+  <div class="row justify-content-around">
+    <form class="col-md-4 bg-light p-3" action="/update" method="POST">
+      <h1 class="text-center text-uppercase h2">Sửa</h1>
+      <div class="from-group">
+        <label for="fullname">Sản Phẩm:</label>
+        <input class="form-control" type="text" name="ten" value="{{users.name}}">
+
+      </div>
+
+      <div class="from-group">
+        <label>Giá:</label>
+        <input class="form-control" type="text" name="gia" value="{{users.gia}}">
+      </div>
+
+      <label>Số Lượng:</label>
+      <input class="form-control" type="text" name="soluong" value="{{users.soluong}}">
+
+      <label>Giảm giá:</label>
+      <input class="form-control" type="text" name="giamgia" value="{{users.giamgia}}">
+      <br>
+      <br>
+      <a class="btn-primary btn btn-block" href="./">Lưu</a>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,28 @@
+<h3 class="text-center">Bảng danh sách sản phẩm</h3>
+
+<a href="./add" class="btn-primary btn btn-block">Thêm</a>
+<table class="table col-md-4 bg-light p-3">
+  <tr>
+    <th>Sản Phẩm</th>
+    <th>Giá</th>
+    <th>Số Lượng</th>
+    <th>Giảm giá</th>
+    <th></th>
+    <th></th>
+  </tr>
+
+  {{!-- {{#each }} {{/each}} --}}
+  {{!-- là một hướng dẫn xử lý vòng lặp trong handlebars, --}}
+  {{!-- nó cho phép lặp lại một mảng hoặc đối tượng và tạo đầu ra HTML cho mỗi phần tử --}}
+
+  {{#each users}}
+  <tr>
+    <td>{{name}}</td>
+    <td>{{gia}}</td>
+    <td>{{soluong}}</td>
+    <td>{{giamgia}}</td>
+    <td ><a class="btn-primary btn btn-block " href="./update">Sửa</a></td>
+    <td ><a class="btn-primary btn btn-block " href="./delete/{{_id}}">Xóa</a></td>
+  </tr>
+  {{/each}}
+</table>
